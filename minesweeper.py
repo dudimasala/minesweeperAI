@@ -280,12 +280,7 @@ class MinesweeperAI():
         """
         for sCell in self.safes:
             if(sCell not in self.moves_made and sCell not in self.mines):
-                print(sCell)
-                print(self.mines)
-                print(self.safes)
                 return sCell
-        print(self.mines)
-        print(self.safes)
         return None
 
     def make_random_move(self):
